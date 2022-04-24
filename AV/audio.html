@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio</title>
+  </head>
+  <body>
+    <div>
+      <!-- Audio
+            audio
+            mp3 , ogg,wav
+            -->
+      <audio
+        src="audio.mp3"
+        type="audio/mpeg"
+        controls
+        style="margin: 100px auto"
+      ></audio>
+      <!-- autoplay -->
+      <audio
+        src="audio.mp3"
+        type="audio.mpeg"
+        style="margin: 100px auto"
+        controls
+        autoplay
+      ></audio>
+
+      <!-- 2nd syntax -->
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+
+        No support
+      </audio>
+      <!-- loop -->
+      <audio controls src="audio.mp3" type="audio/mpeg" loop></audio>
+
+      <!-- Mute -->
+      <audio controls src="audio.mp3" type="audio/mpeg" muted></audio>
+    </div>
+  </body>
+</html>

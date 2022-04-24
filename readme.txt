@@ -35,3 +35,8 @@ form :
 feedback-> input
 checkbox : Will visit again?
 
+CSS 
+
+inline css 
+style tag css 
+external stylesheet

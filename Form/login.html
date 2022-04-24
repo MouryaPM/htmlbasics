@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 15px;
+      }
+      form {
+        border: 5px solid #f1f1f1;
+      }
+      .textinput {
+        width: 100%;
+        /* max-width: 90%; */
+        padding: 10px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: rgb(91, 126, 13);
+        color: white;
+        padding: 14px 0;
+        margin: 10px 10px 10px 30px;
+        border: none;
+        cursor: grabbing;
+        width: 90%;
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 18px;
+      }
+      .formcontainer {
+        text-align: left;
+        margin: 24px 50px 12px;
+      }
+      .container {
+        padding: 16px 0;
+        text-align: left;
+      }
+      .forgot_password {
+        float: right;
+        padding-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="/action_page.php">
+        <h1>Login Form</h1>
+        <div class="formcontainer">
+          <hr />
+          <!-- username -->
+          <label for="username"> <strong>Username</strong></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="username"
+            class="textinput"
+            required
+            autofocus
+          />
+          <!-- password -->
+          <label for="password"> <strong>Password</strong></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            class="textinput"
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+        <div class="container">
+          <label for="remember" style="padding-left: 15px"> Remember me </label>
+          <input type="checkbox" checked name="remember" />
+
+          <span class="forgot_password"
+            ><a href="#">Forgot password ?</a>
+          </span>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

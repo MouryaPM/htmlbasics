@@ -5,7 +5,7 @@
   </head>
   <body>
     <header></header>
-    <main>
+    <main style="margin-left: 100px">
       <div>
         <form action="/submit-data">
           <!-- input box
@@ -20,6 +20,7 @@
             type="text"
             placeholder="Enter your text here"
             name="message"
+            required
           />
           <!-- radio -->
           <input type="radio" />Out-door <input type="radio" />In-door
@@ -48,6 +49,82 @@
       <div>
         <p>This is para inside the div tag</p>
       </div>
+
+      <!-- Textarea - multi-line text
+        textarea
+        cols -> visible width of the text area 
+        rows -> visible line in text area
+      -->
+      <br /><br />
+      <label for="text1">Review</label>
+      <textarea name="review" id="text1"> </textarea>
+
+      <br /><br />
+      <label for="text2">Review</label>
+      <textarea
+        name="review"
+        id="text2"
+        cols="30"
+        rows="10"
+        maxlength="100"
+        readonly
+      >
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus consequatur reiciendis aut dolore commodi recusandae harum possimus eaque, at reprehenderit.</textarea
+      >
+      <br /><br />
+      <!-- select / dropdowns
+      select
+        option
+      -->
+
+      <label for="cars">Words</label>
+      <select id="cars" autofocus>
+        <option value="audi">Audi</option>
+        <option value="volvo">Volvo</option>
+        <option value="apple">Apple</option>
+        <option value="mango">Mango</option>
+      </select>
+      <br />
+      <br />
+      <label for="cars">Words</label>
+      <select id="cars" disabled>
+        <option value="audi">Audi</option>
+        <option value="volvo">Volvo</option>
+        <option value="apple">Apple</option>
+        <option value="mango">Mango</option>
+      </select>
+      <br />
+      <br />
+      <label for="cars">Words</label>
+      <select id="cars">
+        <option value="">--Select--</option>
+        <option value="audi">Audi</option>
+        <option value="volvo">Volvo</option>
+        <option value="apple">Apple</option>
+        <option value="mango">Mango</option>
+      </select>
+      <br />
+      <br />
+      <label for="cars">Words</label>
+      <select id="cars" multiple required>
+        <option value="">--Select--</option>
+        <option value="audi">Audi</option>
+        <option value="volvo">Volvo</option>
+        <option value="apple">Apple</option>
+        <option value="mango">Mango</option>
+      </select>
+      <br />
+      <br />
+      <label for="cars">Words</label>
+      <select id="cars" size="3">
+        <option value="">--Select--</option>
+        <option value="audi">Audi</option>
+        <option value="volvo">Volvo</option>
+        <option value="apple">Apple</option>
+        <option value="mango">Mango</option>
+      </select>
+      <br />
+      <br />
     </main>
     <footer>
       <p>Text @copy <a href=""></a></p>
